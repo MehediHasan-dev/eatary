@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ========================== *\
+    RESET
+\* ========================== */
+
+html {
+    @apply scroll-smooth
+}
+
+body {
+    @apply font-body font-normal text-neutral-950 bg-[#FAF3E0]
+}
+
+
+/* ========================== *\
+    CUSTOM CLASSES
+\* ========================== */
+
+.section {
+    @apply py-[5rem]
+}
+
+.img_holder {
+    @apply bg-[#FAF3E0] overflow-hidden
+}
+
+.img_cover {
+    @apply w-full h-full object-cover
+}
+
+.input_field,
+.select_filed {
+    @apply w-full h-[45px] lg:h-[55px] text-[.774rem] md:text-[1rem] bg-transparent text-neutral-700 px-[10px] rounded-[5px] border border-neutral-700/20 capitalize outline-none focus:border-primary/60 focus:shadow-sm
+}
+
+.input_field::placeholder {
+    @apply text-neutral-600
+}
+
+
+.has_scroll::-webkit-scrollbar {
+    @apply h-[8px]
+}
+
+.has_scroll::-webkit-scrollbar-button {
+    @apply w-[calc(25%_-_30px)]
+}
+
+.has_scroll::-webkit-scrollbar-track {
+    @apply bg-primary/20 rounded-full
+}
+
+.has_scroll::-webkit-scrollbar-thumb {
+    @apply bg-primary/80 hover:bg-primary rounded-full transition-all duration-500
+}
+
+
+.custom_selected {
+    @apply w-full h-full relative
+}
+
+.custom_selected::after {
+    @apply content-[''] absolute bottom-[17px] md:bottom-[14px] lg:bottom-[20px] right-[8px] border-[4px] md:border-[6px] border-t-neutral-600 border-l-transparent border-r-transparent border-b-transparent
+}
+
+/* 
+** HEADER
+ */
+.nav_item {
+    @apply font-medium capitalize font-primary hover:text-primary transition-all text-[1.1rem] lg:text-[1.157rem]
+}
+
+.nav_item .active {
+    @apply text-primary
+}
+
+.h_after .active {
+    @apply relative
+}
+
+.h_after .active::after {
+    @apply content-[''] absolute w-[10px] h-[3px] bottom-[-5px] left-[50%] translate-x-[-50%] bg-primary rounded-full
+}
+
+
+
+/* ========================== *\
+    COMPONENTES
+\* ========================== */
+
+/* 
+** BTN
+ */
+
+.btn {
+    @apply h-[45px] px-[24px] rounded-md text-[1.1rem] capitalize font-primary transition-all duration-[200ms] lg:px-[40px] lg:h-[55px] lg:text-[1.157rem]
+}
+
+
+.btn_primary {
+    @apply border-[1px] border-primary text-primary hover:bg-primary hover:text-white hover:scale-[1.02]
+}
