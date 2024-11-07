@@ -10,25 +10,23 @@ import BookSection from '../componentes/BookSection';
 function Blog() {
     return (
         <main className='flex flex-col gap-[4rem] lg:gap-[7rem] pt-[120px] pb-[60px] lg:pb-[100px]'>
-            <div className="container">
 
-                {/* Page title */}
-                <Helmet>
-                    <title>Blog | Explore Culinary Insights & Tips from Eatary</title>
-                    <meta
-                        name="description"
-                        content="Dive into Eatary’s blog for the latest culinary trends, dining tips, recipe ideas, and behind-the-scenes insights. Stay updated with our food journey!"
-                    />
-                </Helmet>
+            {/* Page title */}
+            <Helmet>
+                <title>Blog | Explore Culinary Insights & Tips from Eatary</title>
+                <meta
+                    name="description"
+                    content="Dive into Eatary’s blog for the latest culinary trends, dining tips, recipe ideas, and behind-the-scenes insights. Stay updated with our food journey!"
+                />
+            </Helmet>
 
-                {/* Rendering all blogs */}
-                <AllBlogs />
+            {/* Rendering all blogs */}
+            <AllBlogs />
 
-                {/* Booking Section */}
-                <BookSection />
+            {/* Booking Section */}
+            <BookSection />
 
 
-            </div>
         </main>
     );
 }

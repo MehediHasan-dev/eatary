@@ -10,9 +10,10 @@ import TitleDisplay from './TitleDisplay'
 const BookSection = ({ useTitleDisplay }) => {
     return (
         <section className='max-w-[690px] block mx-auto'>
-            <div className="container grid gap-[30px] lg:gap-[60px]">
 
-                {/* Section Title */}
+
+            {/* Section Title */}
+            <div className="container grid gap-[30px] lg:gap-[60px]">
                 <div>
                     {useTitleDisplay ? (
                         <TitleDisplay
@@ -28,11 +29,10 @@ const BookSection = ({ useTitleDisplay }) => {
                         />
                     )}
                 </div>
-
-                {/* Booking Form */}
-                <BookingForm />
-
             </div>
+            {/* Booking Form */}
+            <BookingForm />
+
         </section>
     )
 }
