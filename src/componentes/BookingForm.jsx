@@ -13,7 +13,7 @@ const BookingForm = () => {
                     <input type="text" autoComplete='off' placeholder='Date*' className='input_field' />
                     <div className='custom_selected'>
                         <select name="time" className="select_filed appearance-none cursor-pointer py-2 px-4 border border-gray-300 rounded-md text-gray-700 transition duration-300" defaultValue="selected">
-                            <option value="selected" disabled>- Select Time -</option>
+                            <option value="selected" disabled>- Select Time -*</option>
                             {Array.from({ length: 24 }, (_, index) => {
                                 const hour = String(index).padStart(2, '0');  // Add leading zero to hour
                                 return (
