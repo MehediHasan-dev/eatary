@@ -26,7 +26,7 @@ const BookingForm = () => {
                     </div>
 
                     <div className='custom_selected'>
-                        <select name="seats" className="select_filed appearance-none cursor-pointer py-2 px-4 border border-gray-300 text-gray-700 transition-all duration-300">
+                        <select name="seats" className="select_filed appearance-none cursor-pointer py-2 px-4 border border-gray-300 text-gray-700 transition-all duration-300" defaultValue="selected">
                             <option value="selected" disabled>- Select Number of Seats -</option>
                             {Array.from({ length: 8 }, (_, index) => {
                                 return (
