@@ -9,7 +9,7 @@ import TitleDisplay from './TitleDisplay'
 
 const BookSection = ({ useTitleDisplay }) => {
     return (
-        <section className='max-w-[690px] block mx-auto'>
+        <section className='max-w-[690px] grid mx-auto  gap-[20px] md:gap-[30px] lg:gap-[40px]'>
 
 
             {/* Section Title */}

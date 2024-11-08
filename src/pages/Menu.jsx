@@ -8,7 +8,7 @@ import { Helmet } from 'react-helmet-async';
 import ClientReviews from '../componentes/ClientReviews';
 import AllMenus from '../componentes/AllMenus';
 import BlogSection from '../componentes/BlogSection';
-import BookingForm from '../componentes/BookingForm';
+import BookSection from '../componentes/BookSection';
 
 function Menu() {
 
@@ -34,7 +34,10 @@ function Menu() {
             <BlogSection />
 
             {/* Booking Section */}
-            <BookingForm />
+            <BookSection />
+
+
+
         </main>
     );
 }
